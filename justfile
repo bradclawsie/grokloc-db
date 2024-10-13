@@ -21,5 +21,4 @@ alter-grants:
 apply-schema:
 	psql --username="grokloc" --dbname="app" --file=./03-schema.sql
 
-ci:
-	create-users create-databases alter-grants apply-schema
+ci: create-users create-databases alter-grants apply-schema
