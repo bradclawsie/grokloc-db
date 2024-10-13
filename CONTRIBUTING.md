@@ -23,7 +23,7 @@ Pull-Request.
 
 In order to propose a change, please send an email to
 
-~grokloc/grokloc-db@lists.sr.ht
+<~grokloc/grokloc-db@lists.sr.ht>
 
 with a Subject line like:
 
