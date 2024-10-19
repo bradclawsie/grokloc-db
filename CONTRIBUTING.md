@@ -10,9 +10,15 @@ https://git.sr.ht/~grokloc/grokloc-db
 
 https://lists.sr.ht/~grokloc/grokloc-db
 
+## Issue Tracker
+
+https://todo.sr.ht/~grokloc/grokloc-db
+
 ## CI
 
 https://github.com/grokloc/grokloc-db/actions
+
+https://builds.sr.ht/~grokloc/grokloc-db
 
 # Proposing Changes
 
