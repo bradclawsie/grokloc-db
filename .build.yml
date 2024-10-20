@@ -5,7 +5,6 @@ environment:
   PGDATABASE: app
   PGUSERNAME: grokloc
   PGPASSWORD: grokloc
-  POSTGRES_APP_URL: postgres://grokloc:grokloc@localhost:5432/app
 
 tasks:
   - update-pacman: |
