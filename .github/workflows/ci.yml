@@ -23,5 +23,5 @@ jobs:
       - name: initialize db
         run: |
           sudo systemctl start postgresql.service && sleep 3
-          just create-users create-databases alter-grants apply-schema
+          just create-users create-databases alter-grants apply-schema truncate
      

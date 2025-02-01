@@ -15,4 +15,4 @@ tasks:
       cd /home/build/grokloc-db && sudo just initdb
       sudo systemctl start postgresql.service && sleep 5
   - test: |
-      cd /home/build/grokloc-db && just create-users create-databases alter-grants apply-schema
+      cd /home/build/grokloc-db && just create-users create-databases alter-grants apply-schema truncate

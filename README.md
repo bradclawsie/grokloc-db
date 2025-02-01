@@ -1,6 +1,5 @@
 # grokloc-db
-GrokLOC database schemas and automation for the
-[GrokLOC API server](https://git.sr.ht/~grokloc/grokloc-apiserver)
+GrokLOC database schemas and automation for the GrokLOC Project.
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 ![ci](https://github.com/grokloc/grokloc-db/actions/workflows/ci.yml/badge.svg)
