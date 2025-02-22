@@ -78,10 +78,12 @@ language plpgsql
 as $ctime_mtime_set$
 declare
 _new record;
+_ut bigint;
 begin
 _new := NEW;
-_new."ctime" = floor(extract(epoch from now()));
-_new."mtime" = floor(extract(epoch from now()));
+_ut = floor(extract(epoch from now()));
+_new."ctime" = _ut;
+_new."mtime" = _ut;
 _new."signature" = gen_random_uuid();
 return _new;
 end;
