@@ -1,4 +1,6 @@
 set shell := ["fish", "-c"]
+grokloc_dsn := "postgres://grokloc:grokloc@localhost:5432/app"
+root_dsn := "postgres://grokloc_root:grokloc@localhost:5432/app"
 
 default:
 	@just --list
@@ -25,3 +27,9 @@ truncate:
 	psql --username="grokloc" --dbname="app" --file=./04-truncate-tables.sql
 
 ci: create-users create-databases alter-grants apply-schema
+
+psql:
+  psql {{grokloc_dsn}}
+
+root:
+  psql {{root_dsn}}
