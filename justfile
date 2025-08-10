@@ -1,4 +1,4 @@
-set shell := ["fish", "-c"]
+set shell := ["bash", "-c"]
 grokloc_dsn := "postgres://grokloc:grokloc@localhost:5432/app"
 root_dsn := "postgres://grokloc_root:grokloc@localhost:5432/app"
 
