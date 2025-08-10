@@ -1,6 +1,7 @@
 set shell := ["bash", "-c"]
-grokloc_dsn := "postgres://grokloc:grokloc@localhost:5432/app"
-root_dsn := "postgres://grokloc_root:grokloc@localhost:5432/app"
+set dotenv-load := true
+set dotenv-filename := 'dotenv-unit'
+set dotenv-required := true
 
 default:
 	@just --list
@@ -29,7 +30,7 @@ truncate:
 ci: create-users create-databases alter-grants apply-schema
 
 psql:
-  psql {{grokloc_dsn}}
+  @psql ${POSTGRES_APP_URL}
 
 root:
-  psql {{root_dsn}}
+  @psql ${DATABASE_URL}

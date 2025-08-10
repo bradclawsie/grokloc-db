@@ -1,16 +1,8 @@
 image: archlinux
-
-environment:
-  PGHOST: localhost
-  PGDATABASE: app
-  PGUSERNAME: grokloc
-  PGPASSWORD: grokloc
-
+packages:
+  - just
+  - postgresql
 tasks:
-  - update-pacman: |
-      sudo pacman -Sy
-  - update-packages: |
-      sudo pacman --noconfirm -S just fish postgresql
   - init-postgres: |
       cd /home/build/grokloc-db && sudo just initdb
       sudo systemctl start postgresql.service && sleep 5
