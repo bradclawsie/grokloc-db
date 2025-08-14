@@ -27,6 +27,11 @@ apply-schema:
 truncate:
 	psql --username="grokloc" --dbname="app" --file=./04-truncate-tables.sql
 
+drop:
+  psql --username="grokloc" --dbname="app" --file=./05-drop-tables.sql
+
+recreate: drop apply-schema
+
 ci: create-users create-databases alter-grants apply-schema
 
 psql:
